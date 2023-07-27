@@ -13,3 +13,17 @@ export const Danger = () => <Button variant='danger'>Danger</Button>;
 
 //in version 6 of story book we can change the name of story :
 Primary.storyName = 'Small Input';
+
+const Template = (args) => <Button {...args} />;
+
+export const PrimaryA = Template.bind({});
+PrimaryA.args = {
+  variant: 'primary',
+  children: 'Primary Args',
+};
+
+export const SecondaryA = Template.bind({});
+SecondaryA.args = {
+  variant: 'secondary',
+  children: 'Secondary Args',
+};
