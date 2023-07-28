@@ -7,6 +7,11 @@ export default {
   title: 'Form/Button',
   component: Button,
   // decorators: [(story) => <Center>{story()}</Center>],
+  argTypes: {
+    // variantColor: { control: 'text' },
+    children: { control: 'text' },
+    onClick: { action: 'clicked' },
+  },
 };
 
 export const Primary = () => (
@@ -21,3 +26,10 @@ export const Secondary = () => (
 );
 export const Success = () => <Button variant='success'>Success</Button>;
 export const Danger = () => <Button variant='danger'>Danger</Button>;
+
+export const PrimaryA = (args) => <Button {...args} />;
+PrimaryA.args = {
+  variant: 'danger',
+  children: 'kiyaaaaa',
+  style: 'font-size:7555px',
+};

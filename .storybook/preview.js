@@ -1,6 +1,9 @@
 /** @type { import('@storybook/react').Preview } */
 // import React from 'react';
 // import { ThemeProvider, theme, CSSReset, Box } from '@chakra-ui/core';
+import '@storybook/addon-console';
+// import { addDecorators } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 
 const preview = {
   parameters: {
@@ -21,6 +24,8 @@ const preview = {
 };
 
 export default preview;
+
+// addDecorators(withKnobs);
 
 // export const decoraotrs = [
 //   (Story) => (
