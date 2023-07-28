@@ -1,4 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
+// import React from 'react';
+// import { ThemeProvider, theme, CSSReset, Box } from '@chakra-ui/core';
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -18,3 +21,14 @@ const preview = {
 };
 
 export default preview;
+
+// export const decoraotrs = [
+//   (Story) => (
+//     <ThemeProvider theme={theme}>
+//       <CSSReset />
+//       <Box>
+//         <Story />
+//       </Box>
+//     </ThemeProvider>
+//   ),
+// ];

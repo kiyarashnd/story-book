@@ -3,6 +3,7 @@ import Button from './Button';
 import Center from '../Center/Center';
 
 export default {
+  parameter: { layout: 'Center' },
   title: 'Form/Button',
   component: Button,
   // decorators: [(story) => <Center>{story()}</Center>],
